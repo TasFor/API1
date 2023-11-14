@@ -1,0 +1,126 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
+#todo-list {
+    max-height: 400px; /* Maksymalna wysokość listy */
+    overflow-y: auto; /* Włącz przewijanie pionowe, gdy lista jest zbyt długa */
+}
+
+#todo-app {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    background-color: #eee;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todo-list li:hover {
+    background-color: #ddd;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+#search-box {
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#search-box:focus {
+    border-color: #aaa;
+}
+
+/* Dodatkowe style dla przycisków edycji i usuwania */
+.delete {
+    float: right;
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.edit-input {
+    margin: px;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.delete {
+    background-color: #ff6347;
+}
+
+
+/* Clearfix dla elementów li */
+#todo-list li {
+    overflow: hidden;
+}
+
+#todo-list span {
+    overflow: hidden;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.task-date {
+    color: #888;
+    font-style: italic;
+    margin-left: 10px;
+}
