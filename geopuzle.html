@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>mapa</title>
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div id="container">
+    <div id="map"></div>
+    <button id="getLocation">Get Current Location</button>
+    <button id="saveButton">Save Raster Map</button>
+    <div id="board">
+      <div id="row0" class="row"></div>
+      <div id="row1" class="row"></div>
+      <div id="row2" class="row"></div>
+      <div id="row3" class="row"></div>
+    </div>
+  </div>
+
+  <canvas id="rasterMap"></canvas>
+  <div id="puzzle-elements"></div>
+  <div id="successMessage"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
